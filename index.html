@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="auth-section" class="card">
+        <h2>Sign In / Sign Up</h2>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="button-group">
+          <button id="signIn" class="button primary">Sign In</button>
+          <button id="signUp" class="button secondary">Sign Up</button>
+        </div>
+        <p id="authMessage"></p>
+      </div>
+
+      <div id="todo-section" class="card" style="display: none">
+        <h2>Your To-Do List</h2>
+        <div class="input-group">
+          <input type="text" id="newTodo" placeholder="Enter a new to-do" />
+          <button id="addTodo" class="button primary">Add</button>
+        </div>
+        <ul id="todoList"></ul>
+        <button id="signOut" class="button secondary">Sign Out</button>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
